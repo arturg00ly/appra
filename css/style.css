@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+html,
+body {
+    height: 100%; 
+}
+
+body {
+    background-color: #f7f6f6;
+    font-family: "Open Sans", arial, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    font-size: 14px;
+    color: #777;
+    top: 0px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 10px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
+h2 {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+h2:before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 2px solid #8f1700;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #262626;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+p {
+    margin: 20px 0;
+}
+
+a, a:hover, a:active, a:focus {
+   outline: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+body > header {
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f7f6f6;
+    z-index: 100;
+    border-bottom: 1px solid #ccc;
+}
+
+body > header .navbar {
+    border: none;
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+}
+
+body > header .navbar .navbar-header {
+    margin-top: 20px;
+}
+
+body > header #navbarCollapse {
+    margin-top: 18px;
+    background-color: #f7f6f6;
+}
+
+figure img {
+    width: 230px;
+    margin-top: -16px;
+}
+
+
+/*
+link underline */
+
+body > header #navbarCollapse ul li a {
+    text-transform: uppercase;
+    color: #999999;
+    border: none;
+    outline: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+body > header #navbarCollapse ul li a:link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #8f1700;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+body > header #navbarCollapse ul li a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+/* end link underline 
+*/
+
+#main {
+    background: #ccc url("../img/appra_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /*top: -10px;*/
+    z-index: 1;
+    background-attachment: fixed;
+    position: relative;
+
+    @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
+}
+
+#main > div {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    top: 44%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: 7px;
+}
+
+#titleFrame {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 7px;
+}
+
+section {
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+#paralax {
+    background: #ccc url('http://appra.eu/img/rzeczoznawca_samochodowy.jpg') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.7;
+    height: 91%;
+    top: -10px;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+section .offerIcons {
+    opacity: 0.5;
+    width: 50px;
+    float: left;
+    margin: 5px 25px 5px 5px;
+}
+
+.offerBox {
+    padding: 20px;
+}
+
+#assetsUlList {
+    list-style: none;
+}
+
+#assetsUlList > li:before {
+    content: "- ";
+}
+
+hr {
+    height: 1px;
+    border-top: 1px solid #D8D8D8;
+}
+
+.service {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background-color: #E5E5E5;
+}
+
+.serviceContent {
+    text-align: left;
+}
+
+.referAllService {
+    text-align: center;
+}
+
+.referServicesIcons {
+    padding-top: 16px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.downloadIco {
+    max-width: 60px;
+    opacity: 0.5;
+}
+
+#tableTDElement {
+    color: #000;
+}
+
+footer {
+    background-color: #555555;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #efefef;
+}
+
+footer a {
+    color: #fff;
+}
+
+#companyName{
+    font-size: 18px;
+    margin-bottom: -20px;
+}
+
+#phonesAndGlyphicon {
+    margin-top: 5px;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.glyphicon-earphone {
+    float: left;
+    margin: 4px 4px;
+}
+
+#telephones {
+    min-width: 330px;
+    font-size: 16px;
+}
+
+#Copyrights {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#google_map {
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width: 767px) {
+    #main div {
+        top: 40%;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+      }
+}
